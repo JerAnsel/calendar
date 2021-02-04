@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 95vh;
+}
+
+#calendar {
+    height: 500px;
+    width: 854px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: min-content repeat(12, 1fr);
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+.day {
+    height: 100%auto;
+    width: 100%px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.title {
+    border: 1px solid black;
+    border-top: none;
+}
+
+.hour {
+    height: 40px;
+    width: 120px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#course-list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-right: 50px;
+    position: relative;
+    top: -80px;
+}
+
+.course {
+    width: 150px;
+    height: 80px;
+    border: 1px solid black;
+    line-height: 0.5;
+    padding: 0 5px;
+    text-align: center;
+}
