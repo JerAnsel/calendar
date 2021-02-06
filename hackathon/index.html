@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hackthon 1</title>
+</head>
+<style type="text/css">
+table {
+  font-family: arial, sans-serif;
+  margin: 20px auto;
+  border: 5px solid #333;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 80px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+form{
+	border : 5px solid #333;
+	margin: auto;
+	padding: 5px;
+	width: 50%;
+	margin-bottom: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+body{
+	position: relative;
+}
+
+</style>
+<body>
+	<h1>Build your schedule</h1>
+<div class="table"></div>
+
+   <table>
+  <tr>
+    <th>Day|Hour</th>
+    <th>8-9</th>
+    <th>9-10</th>
+    <th>10-11</th>
+    <th>11-12</th>
+    <th>12-13</th>
+    <th>13-14</th>
+    <th>14-15</th>
+    <th>15-16</th>
+    <th>16-17</th>
+    <th>17-18</th>
+    <th>18-19</th>
+    <th>19-20</th>
+
+  </tr>
+  <tr>
+    <th>Sunday</th>
+    <td id="sun8"></td>
+    <td id="sun9"></td>
+    <td id="sun10"></td>
+    <td id="sun11"></td>
+    <td id="sun12"></td>
+    <td id="sun13"></td>
+    <td id="sun14"></td>
+    <td id="sun15"></td>
+    <td id="sun16"></td>
+    <td id="sun17"></td>
+    <td id="sun18"></td>
+    <td id="sun19"></td>
+  </tr>
+   <tr>
+    <th>Monday</th>
+    <td id="mon8"></td>
+    <td id="mon9"></td>
+    <td id="mon10"></td>
+    <td id="mon11"></td>
+    <td id="mon12"></td>
+    <td id="mon13"></td>
+    <td id="mon14"></td>
+    <td id="mon15"></td>
+    <td id="mon16"></td>
+    <td id="mon17"></td>
+    <td id="mon18"></td>
+    <td id="mon19"></td>
+
+  </tr>
+   <tr>
+    <th>Tuesday</th>
+    <td id="tue8"></td>
+    <td id="tue9"></td>
+    <td id="tue10"></td>
+    <td id="tue11"></td>
+    <td id="tue12"></td>
+    <td id="tue13"></td>
+    <td id="tue14"></td>
+    <td id="tue15"></td>
+    <td id="tue16"></td>
+    <td id="tue17"></td>
+    <td id="tue18"></td>
+    <td id="tue19"></td>
+
+  </tr>
+   <tr>
+    <th>Wednesday</th>
+    <td id="wed8"></td>
+    <td id="wed9"></td>
+    <td id="wed10"></td>
+    <td id="wed11"></td>
+    <td id="wed12"></td>
+    <td id="wed13"></td>
+    <td id="wed14"></td>
+    <td id="wed15"></td>
+    <td id="wed16"></td>
+    <td id="wed17"></td>
+    <td id="wed18"></td>
+    <td id="wed19"></td>
+
+  </tr>
+   <tr>
+    <th>Thursday</th>
+    <td id="thu8"></td>
+    <td id="thu9"></td>
+    <td id="thu10"></td>
+    <td id="thu11"></td>
+    <td id="thu12"></td>
+    <td id="thu13"></td>
+    <td id="thu14"></td>
+    <td id="thu15"></td>
+    <td id="thu16"></td>
+    <td id="thu17"></td>
+    <td id="thu18"></td>
+    <td id="thu19"></td>
+
+  </tr>
+
+
+</table>
+<form action="/action_page.php">
+	  <input class="info" type="text" id="name" name="name" value="" placeholder="Name of Course"required="true">
+	  <input class="info" type="number" id="startTime" name="startTime" value="" placeholder="startTime of course">
+	  <input class="info" type="number" id="endTime" name="endTime" value="" placeholder="endTime of course">
+
+	  <div>
+     <input type="checkbox" id="sun" name="sun" value="sun" checked="true">
+     <label for="sun" >Sunday</label>
+     <input type="checkbox" id="mon" name="mon" value="mon" checked="true">
+     <label for="vehicle1">Monday</label>
+
+     <input type="checkbox" id="tue" name="tue" value="tue">
+     <label for="vehicle1">Tuesday</label>
+
+     <input type="checkbox" id="wed" name="wed" value="wed">
+     <label for="vehicle1">Wednesday</label>
+
+     <input type="checkbox" id="thu" name="thu" value="thu">
+     <label for="vehicle1">Thursday</label>
+
+     </div>
+	  <input type="button" value="Add Course to platform" id="addPlat">
+	</form> 
+
+<script type="text/javascript" src="myscript.js"></script>
+	  
+</body>
+</html>
