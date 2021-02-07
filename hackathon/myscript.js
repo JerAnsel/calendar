@@ -105,13 +105,13 @@ function addCourseToCalender(course) {
 		for (var i = 0; i < addedCourses.length; i++){
 			if(addedCourses[i].id == course.id) {
 				isId=true;
-				alert("you have registered alreday");
+				alert("You have registered already.");
 				break;
 			}else{
 				if (checkDays(addedCourses[i].days,course.days)) {
 					if(addedCourses[i].startTime == course.startTime){
 						isTime=true;
-				alert("you have course with same days and hour ")
+				alert("You already have a course at that time.")
 
 					}
 				}
@@ -138,13 +138,15 @@ function addCourse(course){
         addedCourses.push(course) ;
 		alert("Done !!");
 		for (var i = 0; i < course.days.length; i++) {
-			var x=document.getElementById(course.days[i]+course.startTime);
-		    x.style.backgroundColor='tomato';
-		    x.style.color="white";
-		    x.style.textAlign = "center";
-		    var node = document.createTextNode(course.name);
-		   // node.style.color = "white";
-		    x.appendChild(node);
+				for (var j = 0; j < course.endTime - course.startTime; j++){
+					var x=document.getElementById(course.days[i]+parseInt(parseInt(course.startTime) + j));
+					x.style.backgroundColor='tomato';
+					x.style.color="white";
+					x.style.textAlign = "center";
+					var node = document.createTextNode(course.name);
+				// node.style.color = "white";
+					x.appendChild(node);
+				}
 		}
 
 		
